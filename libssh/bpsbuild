@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
-name=libssh
-version=0.10.4
+name="libssh"
+version="0.10.4"
 description="C library implenting the SSHv2 protocol on client and server side"
-depends=()
 source=("https://www.libssh.org/files/0.10/libssh-${version}.tar.xz")
 group=(net.libs)
-depends=(openssl)
-zlib_depends=(zlib)
+depends="openssl,zlib"
+
 
 setup() {
     cmake -S $SOURCEDIR -B $BUILDDIR \
