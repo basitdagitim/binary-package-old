@@ -4,7 +4,7 @@ version="5.45"
 description="Identify a files format by scanning binary data for patterns"
 source=("http://ftp.astron.com/pub/file/file-${version}.tar.gz")
 group=(sys.apps)
-
+depends=""
 setup(){
     opts=(
     	--prefix=/usr
